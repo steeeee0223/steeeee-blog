@@ -3,8 +3,8 @@ import { RootProvider } from "next-docs-ui/provider";
 import { DocsLayout } from "next-docs-ui/layout";
 import { Hanken_Grotesk } from "next/font/google";
 
-import { tree } from "@/app/source";
-import { TitleProvider } from "@/app/title-provider";
+import { tree } from "@/utils/source";
+import { TitleProvider } from "@/utils/title-provider";
 
 import "next-docs-ui/style.css";
 import "@/app/global.css";

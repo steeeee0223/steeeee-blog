@@ -7,10 +7,9 @@ import { SafeLink } from "next-docs-zeta/link";
 import { DocsPage } from "next-docs-ui/page";
 import { findNeighbour, getTableOfContents } from "next-docs-zeta/server";
 
-import { getPage, getPageUrl, tree } from "@/app/source";
-
-import { Content } from "./content";
-import { CopyButton } from "./copy-button";
+import { getPage, getPageUrl, tree } from "@/utils/source";
+import { MDXContent as Content } from "@/components/mdx-content";
+import { CopyButton } from "@/components/copy-button";
 
 function formatDate(date: Date) {
   const formatter = new Intl.DateTimeFormat("en-GB", {

@@ -1,4 +1,4 @@
-import { getPageUrl } from "@/app/source";
+import { getPageUrl } from "@/utils/source";
 import { allDocs } from "contentlayer/generated";
 import { createSearchAPI } from "next-docs-zeta/server";
 

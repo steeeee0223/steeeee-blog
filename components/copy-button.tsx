@@ -22,7 +22,7 @@ export function CopyButton({ className }: { className?: string }) {
       ) : (
         <>
           <Copy className="nd-inline nd-w-4 nd-h-4 nd-mr-2" />
-          Copy link
+          Copy Link
         </>
       )}
     </button>

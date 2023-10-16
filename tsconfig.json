@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".contentlayer/generated"
+    ".contentlayer/generated",
+    "dev/code-demo/react-live-demo.tsx"
   ],
   "exclude": ["node_modules"]
 }

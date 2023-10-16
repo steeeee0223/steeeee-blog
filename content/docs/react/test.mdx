@@ -1,0 +1,59 @@
+---
+updated: 2023-9-16
+title: This is a test page
+authors: [steeeee]
+---
+
+## Usage
+
+#### Writing Questions
+
+<Question id="good-question">Some important Questions...</Question>
+
+#### Writing Tabs
+
+<NDTabs items={["Javascript", "Python"]}>
+  <NDTab value="Javascript">
+  ```ts title="app.ts"
+  console.log("hello world!") 
+  ```
+
+  </NDTab>
+  <NDTab value="Python">
+  
+  ```python title="main.py"
+  print("hello world!") 
+  ```
+  </NDTab>
+</NDTabs>
+
+#### Writing Steps
+
+<NDSteps>
+  <NDStep>
+  #### Hello World
+
+  </NDStep>
+
+  <NDStep>
+  #### Hello World
+  
+  
+  </NDStep>
+</NDSteps>
+
+#### Writing Files
+
+<NDFiles>
+  <NDFile title="app" defaultOpen>
+    <NDFile title="layout.tsx" />
+    <NDFile title="page.tsx" />
+    <NDFile title="global.css" />
+  </NDFile>
+  <NDFile title="components">
+    <NDFile title="button.tsx" />
+    <NDFile title="tabs.tsx" />
+    <NDFile title="dialog.tsx" />
+  </NDFile>
+  <NDFile title="package.json" />
+</NDFiles>
