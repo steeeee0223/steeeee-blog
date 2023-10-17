@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import { RootProvider } from "next-docs-ui/provider";
 import { DocsLayout } from "next-docs-ui/layout";
 import { Hanken_Grotesk } from "next/font/google";
+import "next-docs-ui/style.css";
 
+import "@/app/global.css";
 import { tree } from "@/utils/source";
 import { TitleProvider } from "@/utils/title-provider";
-
-import "next-docs-ui/style.css";
-import "@/app/global.css";
+import { REPO } from "@/utils/config";
 
 const font = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -16,13 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en" className={font.className} suppressHydrationWarning>
       <body>
         <RootProvider>
-          <DocsLayout
-            tree={tree}
-            nav={{
-              title: "Steeeee Notes",
-              githubUrl: "https://github.com/joulev/nextjs-faq",
-            }}
-          >
+          <DocsLayout tree={tree} nav={{ title: "Steeeee Notes", githubUrl: REPO }}>
             <TitleProvider tree={tree}>{children}</TitleProvider>
           </DocsLayout>
         </RootProvider>

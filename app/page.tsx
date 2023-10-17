@@ -2,16 +2,15 @@ import { Metadata } from "next";
 import { Link, MDXContent } from "next-docs-ui/mdx";
 import { DocsPage } from "next-docs-ui/page";
 
-const REPO = "https://github.com/joulev/nextjs-faq";
+import { GITHUB_URL, REPO } from "@/utils/config";
 
 export default function Home() {
   return (
     <DocsPage>
       <MDXContent>
         <p>
-          I am <Link href="https://github.com/joulev">@joulev</Link>, a Next.js user, an active
-          helper and moderator on the{" "}
-          <Link href="https://discord.gg/nextjs">official Next.js server</Link>.
+          I am <Link href={GITHUB_URL}>@joulev</Link>, a Next.js user, an active helper and
+          moderator on the <Link href="https://discord.gg/nextjs">official Next.js server</Link>.
         </p>
         <p>
           This website is a collection of the answers that some active server members and I have for

@@ -10,6 +10,7 @@ import { findNeighbour, getTableOfContents } from "next-docs-zeta/server";
 import { getPage, getPageUrl, tree } from "@/utils/source";
 import { MDXContent as Content } from "@/components/mdx-content";
 import { CopyButton } from "@/components/copy-button";
+import { REPO } from "@/utils/config";
 
 function formatDate(date: Date) {
   const formatter = new Intl.DateTimeFormat("en-GB", {
@@ -65,7 +66,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
           <div className="flex flex-col gap-2 justify-start text-sm text-muted-foreground">
             <SafeLink
               className="hover:text-foreground transition-colors"
-              href={`https://github.com/joulev/nextjs-faq/blob/main/content/${page._raw.sourceFilePath}`}
+              href={`${REPO}/tree/master/content/${page._raw.sourceFilePath}`}
             >
               <PenLine className="nd-inline nd-w-4 nd-h-4 nd-mr-2" />
               Edit this page
